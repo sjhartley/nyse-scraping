@@ -94,7 +94,7 @@ function nyse_get(command_Stuff){
   }
 
   var url="https://www.nyse.com/api/quotes/filter";
-  var payload={"instrumentType":"EQUITY","pageNumber":1,"sortColumn":"NORMALIZED_TICKER","sortOrder":"ASC","maxResultsPerPage":1,"filterToken":""};
+  var payload={"instrumentType":"EQUITY","pageNumber":1,"sortColumn":"NORMALIZED_TICKER","sortOrder":"ASC","maxResultsPerPage":10,"filterToken":""};
   post_options.url=url;
   post_options.data=payload;
 
